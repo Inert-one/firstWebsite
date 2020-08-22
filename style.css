@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./1.jpg);
+    height: 100vh;
+    width: 100%;
+   background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    
+}
+ul li a:hover{
+    background-color: white;
+    color: black
+}
+/* .btn12{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    
+}
+.btn12:hover{
+    background-color: white;
+    color: black;
+} */
+ul li.active a{
+    background-color: white;
+    color: black
+}
+
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    
+    
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    position: relative;
+    left: 30%;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 61%;
+    right: 0%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black
+}
+.social{
+    
+    width: 150px;
+    text-align: center;
+    opacity: .4;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin-top: 25px;
+    
+    
+}
+.social img{
+    height: 36px;
+    width: 36px;
+   display: inline-block;
+   
+
+}
+.search{
+    height: 3%;
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+    position: absolute;
+    top: 15%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+    
+}
+.search img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    
+}
+.search input{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;}

@@ -1,10 +1,18 @@
+:root{
+    --overlay-color: rgba(24,39,51,0.85);
+}
+
 *{
   margin: 0;
     padding: 0;
     font-family: Century Gothic;
 }
+body{
+    background-image:repeating-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
+
+}
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./1.jpg);
+    background-image:repeating-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
     height: 100vh;
     width: 100%;
    background-size: cover;
@@ -47,36 +55,46 @@ ul li.active a{
     color: black
 }
 
-.logo img{
+/* .logo img{
     float: left;
     width: 200px;
     height: auto;
     margin-top: 20px;
     
     
-}
+} */
 .main{
     max-width: 1200px;
     margin: auto;
 }
 .title{
     position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(-50%,-50%);
+    top: 73%;
+    right: 5vw;
+    /* transform: translate(-50%,-50%); */
 }
-
+.text-logo{
+    right: 5%;
+}
+.title{
+    margin: 0%;
+    padding: 0%;
+    /* position: absolute; */
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+}
 .title h1{
     color: #fff;
+    display:flex;
     position: relative;
-    left: 30%;
-    font-size: 70px;
+    font-size: 11vh;
 }
 .button{
-    position: absolute;
-    top: 61%;
-    right: 0%;
-    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 88%;
+    right: 3vw;
+    /* transform: translate(-50%,-50%); */
 }
 .btn{
     border: 1px solid #fff;
@@ -89,12 +107,12 @@ ul li.active a{
     background-color: white;
     color: black
 }
-.social{
+/* .social{
     
     width: 150px;
     text-align: center;
-    opacity: .4;
-    position: absolute;
+    /* opacity: .4; */
+    /* position: absolute;
     top: 35%;
     left: 13%;
     transform: translate(-50%,-50%);
@@ -102,17 +120,17 @@ ul li.active a{
     float: left;
     list-style-type: none;
     margin-top: 25px;
+     */
     
-    
-}
-.social img{
+/* } */
+/* .social img{
     height: 36px;
     width: 36px;
    display: inline-block;
-   
+    */
 
-}
-.search{
+/* } */
+/* .search{
     height: 3%;
     width: 45%;
     display: flex;
@@ -130,6 +148,80 @@ ul li.active a{
     width: 25px;
     cursor: pointer;
     
+} */
+
+.gradient-box {
+    border: 10px solid;
+    border-image-source: linear-gradient(45deg, rgb(94, 3, 179), rgb(76, 56, 253));
+    border-image-slice: 1;
+    color: #fff;
+    margin: 0%;
+
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    /* transform: translate(-50%,-50%); */
+    right: -25%;
+    top: 25%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+.gradient-box h1, p{
+    position: relative;
+    right: 20%;
+}
+.gradient-box button{
+    padding: 6px;
+    width: 90px;
+}
+.gradient-box button:hover{
+    background-color: #6a5acd;
+    color: black;
+    box-shadow: 0 0 5px#6a5acd,
+                0 0 5px#6a5acd,
+                0 0 10px#6a5acd,
+                0 0 25px#6a5acd;
+}
+.gradient-box button a{
+    color: #fff;
+}
+
+button .hamburger{
+    background: url(./menu.png);
+}
+#hamburger:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: none;
+    /* transform: rotate(180deg); */
+}
+
+.hamburger{
+    margin: 0%;
+    padding-top: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    list-style-type: none;
+    /* margin-top: 6px; */
+    display: none;
+}
+/* .main button{
+    background:url(./menu.png)
+} */
+.hamburger img{
+    width: 5px;
+    height: 5px;
 }
 .search input{
     width: 100%;
@@ -137,3 +229,53 @@ ul li.active a{
     font-size: 17px;
     border: 0;
     outline: none;}
+
+@media screen and (max-width: 767px){
+    .hamburger{
+        display: block;
+        margin-top: 3vw;
+    }
+    ul{
+        display: none;
+    }
+    ul.show{
+        /* flex-wrap: inherit; */
+        display: flex;
+        align-items: center;
+        background: black;
+        z-index: 1;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 6vh;
+   }
+    ul.show li{
+        margin-top: 2vw;
+   }
+   .text-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gradient-box{
+      max-height: 100vh;
+      top: -12.5%;
+      overflow: hidden;
+      overflow-y: scroll;
+  }
+
+  .gradient-box h1,p{
+      right: 0%;
+  }
+  .gradient-box h1{
+      font-size: medium;
+      text-decoration: underline;
+  }
+  .gradient-box p{
+      font-size:12px;
+  }
+  /* .social{
+      position: absolute;
+      /* top: 0%; */
+      /* left: 0%; */
+  /* } */ 
+}

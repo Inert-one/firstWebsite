@@ -5,8 +5,6 @@
         <link rel="stylesheet" type="text/css"
               href="style.css">
         <link rel="stylesheet" type="text/css"
-              href="index.scss">
-        <link rel="stylesheet" type="text/css"
               href="Sign%20up.css">
         <link rel="stylesheet" type="text/css"
               href="gallery%20style.css">
@@ -21,8 +19,13 @@
         <header>
             <div class="main">
             <div class="logo">
-                <img src="PicsArt_04-30-09.42.09.jpg"
+                <img src="PicsArt_04-30-09.42.09.jpg">
             </div>
+
+
+            <button class="searchimg" id="searchimg"><img src="./search.png" style="width: 32px; height: 32px;"></button>
+            <button class="hamburger" id="hamburger"><img src="./menu.png" style="width: 32px; height: 32px;"></button>
+            <nav id="nav">
             <ul>
                  <li class="active"><button href="index.html">Home</button></li>
                 <li><button class="btn11">Gallery</button></li>
@@ -30,13 +33,14 @@
                 <li><button>Contact</button></li>
                 <li><button class="btn12">Sign Up</button></li>
             </ul>
+        </nav>
                 </div>
 
     <div class="banner">
         <div class="left-column">
-        <div class="search">
+        <div class="search" id="search">
             <img src="search.png">
-            <input type="text">
+            <input type="text" placeholder="Search...">
             
             </div>
             <div class="social">
@@ -52,20 +56,23 @@
             
             
             </div>
+    </div>
+    <div class="text-logo" id="text-logo">
         <div class="title">
                 <h1> Rivayat </h1>
                 </div>
                 <div class="button">
                     <a href="#" class="btn">Watch Videos</a>
                     <a href="#" class="btn">Learn more...</a>
-                    
-                </div>
-
-                <!-- <div class="gradient-box">
-  
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, lorem vel tincidunt imperdiet, nibh elit laoreet felis, a bibendum nisl tortor non orci. Donec pretium fermentum felis, quis aliquet est rutrum ut. Integer quis massa ut lacus viverra pharetra in eu lacus. Aliquam tempus odio adipiscing diam pellentesque rhoncus. Curabitur a bibendum est. </p>
-                    
-                    </div> -->
+                    </div>
+        </div>
+                <div class="gradient-box">
+                    <h1><i>About this website</i></h1>
+                    <p>This website contains all of my poetic creations</p>
+                    <p>I created this website with the aim of making my collection accessible from any place</p>
+                    <p>if you are a visitor, feel free to contact me.</p>
+                    <button><a href="mailto:shubhamdubey57@gmail.com">Hi !</a></button>
+                    </div>
 
                 <!-- sign up container -->
                 
@@ -87,9 +94,13 @@
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
         <button>Sign Up</button>
+        <button class="hid" id="signIns">Sign In</button>
+
     </form>
 </div>
 <div class="form-container sign-in-container">
+    <span class="closed">&times;</span>
+
     <form action="#">
         <h1>Sign in</h1>
         <div class="social-container">
@@ -102,6 +113,7 @@
         <input type="password" placeholder="Password" />
         <a href="#">Forgot your password?</a>
         <button>Sign In</button>
+        <button class="hid" id="signUps">Sign Up</button>
     </form>
 </div>
 <div class="overlay-container">
